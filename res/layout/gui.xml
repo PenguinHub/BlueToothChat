@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnShoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:onClick="shoot"
+        android:text="Shoot" />
+
+    <Button
+        android:id="@+id/BtnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLeft"
+        android:layout_marginBottom="27dp"
+        android:layout_toLeftOf="@+id/btnRight"
+        android:onClick="forward"
+        android:text="Forward" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnLeft"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+         android:onClick="right"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnUp"
+        android:layout_alignParentBottom="true"
+         android:onClick="back"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDown"
+        android:layout_centerHorizontal="true"
+        android:onClick="left"
+        android:text="Left" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BtnUp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:onClick="stop"
+        android:text="Stop" />
+
+</RelativeLayout>
